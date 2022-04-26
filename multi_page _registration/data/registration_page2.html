@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Your Educational Details</title>
+
+    <style>
+        #heading{
+            margin-left: 37%;
+            font-size: 37px;
+            color: rgb(90, 26, 143);
+        }
+        form{
+            background-color: rgb(201, 248, 232);
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        label{
+            margin-left: 100px;
+            font-weight:bold;
+        }
+        input{
+            margin-left: 100px;
+            width: 250px;
+        }
+        .star{
+            color: red;
+        }
+        .btn{
+            margin-left: 500px;
+            width: 70px;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <br>
+    <div id="heading">
+        Fill your Educational Details
+    </div>
+    
+    <form onsubmit="my_func2(event)" action="registration_page3.html">
+        <br><br>
+        <div>
+            <label>HSC Institute name<span class="star">*</span> </label> <br><br>
+            <input type="text" id="hscInst" required>
+        </div>
+        <br><br>
+        <div>
+            <label>HSC Board<span class="star">*</span> </label> <br><br>
+            <input type="text" id="hscBoard" required>
+        </div>
+        <br><br>
+        <div>
+            <label>HSC Score<span class="star">*</span> </label> <br><br>
+            <input type="number" id="hscScore" required>
+        </div>
+        <br><br>
+        <div>
+            <label>SSC Institute name<span class="star">*</span> </label> <br><br>
+            <input type="text" id="sscInst" required>
+        </div>
+        <br><br>
+        <div>
+            <label>SSC Board<span class="star">*</span> </label> <br><br>
+            <input type="text" id="sscBoard" required>
+        </div>
+        <br><br>
+        <div>
+            <label>SSC Score<span class="star">*</span> </label> <br><br>
+            <input type="number" id="sscScore" required>
+        </div>
+        <br><br>
+        <div>
+            <label>Current Institute<span class="star">*</span> </label> <br><br>
+            <input type="text" id="currentInst" required>
+        </div>
+        <br><br>
+        <div>
+            <label>Current Score<span class="star">*</span> </label> <br><br>
+            <input type="number" id="currentScore" required>
+        </div>
+        <br><br>
+        <div>
+            <label>Current Backlogs(If no backlog,put 0)<span class="star">*</span> </label> <br><br>
+            <input type="number" id="backlogs" required>
+        </div>
+        <br><br>
+        <div>
+            <input type="reset" value="reset" class="btn">
+            <input type="submit" value="next" class="btn">            
+        </div>
+
+        <br> <br>   
+
+    </form>
+</body>
+<script src="../registrationForm.js"></script>
+</html>

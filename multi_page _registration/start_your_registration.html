@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Your Personal Details</title>
+
+    <style>
+        #heading{
+            margin-left: 37%;
+            font-size: 37px;
+            color: rgb(90, 26, 143);
+        }
+        form{
+            background-color: rgb(201, 248, 232);
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        label{
+            margin-left: 100px;
+            font-weight:bold;
+        }
+        input{
+            margin-left: 100px;
+            width: 250px;
+        }
+        .star{
+            color: red;
+        }
+        .btn{
+            margin-left: 500px;
+            width: 70px;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <br>
+    <div id="heading">
+        Fill your Personal Details
+    </div>
+    
+    <form onsubmit="my_func1(event)" action="data/registration_page2.html">
+        <br><br>
+        <div>
+            <label>Name<span class="star">*</span> </label> <br><br>
+            <input type="text" id="firstname" required>
+            <input type="text" id="lastname" required>
+        </div>
+        <br><br>
+        <div>
+            <label>Date Of Birth<span class="star">*</span> </label> <br><br>
+            <input type="date" id="dob" required>
+        </div>
+        <br><br>
+        <div>
+            <label>Email<span class="star">*</span> </label> <br><br>
+            <input type="text" id="email" required>
+        </div>
+        <br><br>
+        <div>
+            <label>Father's Name<span class="star">*</span> </label> <br><br>
+            <input type="text" id="F_firstname" required>
+            <input type="text" id="F_lastname" required>
+        </div>
+        <br><br>
+        <div>
+            <label>Mother's Name<span class="star">*</span> </label> <br><br>
+            <input type="text" id="M_firstname" required>
+            <input type="text" id="M_lastname" required>
+        </div>
+        <br><br>
+        <div>
+            <label>Gender<span class="star">*</span> </label>
+            <input type="radio" id="gender" name="g" required>Male
+            <input type="radio" name="g" required>Female
+        </div>
+        <br><br>
+        <div>
+            <label>Nationality<span class="star">*</span> </label> <br><br>
+            <input type="text" id="nationality" required>
+        </div>
+        <br><br>
+        <div>
+            <label>Street<span class="star">*</span> </label> <br><br>
+            <input type="text" id="street" required>
+        </div>
+        <br><br>
+        <div>
+            <label>City<span class="star">*</span> </label> <br><br>
+            <input type="text" id="city" required>
+        </div>
+        <br><br>
+        <div>
+            <label>Country<span class="star">*</span> </label> <br><br>
+            <input type="text" id="country" required>
+        </div>
+        <br><br>
+        <div>
+            <label>Telephone<span class="star">*</span> </label> <br><br>
+            <input type="number" id="tel_num" required>
+        </div>
+        <br><br>
+        <div>
+            <label>Mob<span class="star">*</span> </label> <br><br>
+            <input type="number" id="mob_num" required>
+        </div>
+        <br><br>        
+        <div>
+            <input type="reset" value="reset" class="btn">
+            <input type="submit" value="next" class="btn">            
+        </div>
+        <br> <br>   
+
+    </form>
+</body>
+<script src="registrationForm.js"></script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Documents</title>
+
+    <style>
+        #heading{
+            margin-left: 37%;
+            font-size: 37px;
+            color: rgb(90, 26, 143);
+        }
+        form{
+            background-color: rgb(201, 248, 232);
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        label{
+            margin-left: 100px;
+            font-weight:bold;
+        }
+        input{
+            margin-left: 70px;
+            width: 250px;
+        }
+        .star{
+            color: red;
+        }
+        .btn{
+            width: 70px;
+            
+        }
+        .browse{
+            margin-left: 150px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div id="bd">
+    <br>
+    <div id="heading">
+        Upload Documents
+    </div>
+    
+    <form onsubmit="my_func3(event)">
+        <br><br>
+        <div>
+            <label>Recent passport size photograph (image size less than 4MB)<span class="star">*</span> </label> <br><br>
+            <span class="browse">Browse a file:</span><input type="file" id="photo" required>
+        </div>
+        <br><br>
+        <div>
+            <label>HSC mark sheet (image, PDF or docs size less than 4MB)<span class="star">*</span> </label> <br><br>
+            <span class="browse">Browse a file:</span><input type="file" id="hscMarkSheet" required>
+        </div>
+        <br><br>
+        <div>
+            <label>SSC mark sheet (image, PDF or docs size less than 4MB)<span class="star">*</span> </label> <br><br>
+            <span class="browse">Browse a file:</span><input type="file" id="sscMarkSheet" required>
+        </div>
+        <br><br>
+        <div>
+            <label>All semesters mark sheet of current education in a single PDF or docs (file size less than 10MB)<span class="star">*</span> </label> <br><br>
+            <span class="browse">Browse a file:</span><input type="file" id="currentMarkSheets" required>
+        </div>
+        <br><br>
+        <div>
+            <input type="reset" value="reset" class="btn">
+            <input type="submit" value="submit" class="btn">            
+        </div>
+        
+        <br><br>   
+
+    </form>
+</div>
+</body>
+<script src="../registrationForm.js"></script>
+</html>
